@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "66e0c284-7300-4511-8b98-bc1af33c85c4",
+		"name": "대기질 정보 조회 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25042411"
+	},
+	"item": [
+		{
+			"name": "서울시 대기질 정보 조회",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/air-quality/seoul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"air-quality",
+						"seoul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "부산시 대기질 정보 조회",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://apis.data.go.kr/6260000/AirQualityInfoService/getAirQualityInfoClassifiedByStation?serviceKey=HhjTuva6pPQzIIVVifQKj8ASob8AhfT9B6AjiqLmeMZzyZm8uvV8Va759bBMwpj2ULo5TWDmreOTFZJRz4T2Yw==&pageNo=1&numOfRows=33",
+					"protocol": "http",
+					"host": [
+						"apis",
+						"data",
+						"go",
+						"kr"
+					],
+					"path": [
+						"6260000",
+						"AirQualityInfoService",
+						"getAirQualityInfoClassifiedByStation"
+					],
+					"query": [
+						{
+							"key": "serviceKey",
+							"value": "HhjTuva6pPQzIIVVifQKj8ASob8AhfT9B6AjiqLmeMZzyZm8uvV8Va759bBMwpj2ULo5TWDmreOTFZJRz4T2Yw=="
+						},
+						{
+							"key": "pageNo",
+							"value": "1"
+						},
+						{
+							"key": "numOfRows",
+							"value": "33"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
